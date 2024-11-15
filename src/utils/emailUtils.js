@@ -43,9 +43,9 @@ export const sendEmails = async (validEmails, subject, message) => {
 
             // Send email to each valid email address with a 1-second delay
             await axios.post('https://api.emailjs.com/api/v1.0/email/send', {
-                service_id: 'mass_mailer',           // Your EmailJS service ID
-                template_id: 'template_lp0ow37',     // Your EmailJS template ID
-                user_id: 'sMlqELNfS9_ZhhGqW',        // Your EmailJS public user ID
+                service_id: 'service_id',           // Your EmailJS service ID
+                template_id: 'template_id',     // Your EmailJS template ID
+                user_id: 'Public_key',        // Your EmailJS public user ID
                 template_params: templateParams,
             }, {
                 headers: {
